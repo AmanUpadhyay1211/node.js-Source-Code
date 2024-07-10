@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic WEB Layout</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+           background-color: rgba(250, 180, 250, 0.781); 
+           font-family: 'Baloo Bhai 2', sans-serif;
+font-family: 'Poppins', sans-serif;
+        }
+        header{
+            position: sticky;
+            top: 0px;
+        }
+        nav>ul{
+            background-color: rgb(221, 20, 204);
+            list-style-type: none ;
+            /* display: flex; */
+            padding: 10px;
+        }
+        ul>li{
+            font-weight: bold;
+            padding: 0px 10px;
+            display: inline;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .container{
+            height: 80vh;
+            width: 95vw;
+            margin: 10px auto;
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+                height: 60vh;
+                width: 35vw;
+                text-align: center;
+                border: 2px solid black;
+                padding: 10px;
+        }
+        .box1{
+            background-color: pink;
+        }
+        .box2{
+            background-color: aqua;
+        }
+        .welcome{
+            width: 80vw;
+            height: 20vh;
+            border: 2px solid black;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 30px;
+            margin: 30px auto;
+        }
+        div>img{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+        }
+        footer{
+            background-color: white;
+            height: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bolder;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box box1">I am box 1</div>
+            <div class="box box2">I am box 2</div>
+        </div>
+        <div class="welcome">Welcome to this Sigma Web Development Express
+            <img src="fixed.webp"  height="100px">
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; reserved by Aman Upadhayy
+    </footer>
+</body>
+</html>

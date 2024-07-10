@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Html page</title>
+</head>
+<body>
+    <%- include(`common/header.ejs`) %>
+     <h1>Welcome <%= data[0].Name %> Bhai</h1>
+     <p><%= data[0].Job %> karte ho kya?</p>
+     <h1>Welcome <%= data[1].Name %> Bhai</h1>
+     <p><%= data[1].Job %> karte ho kya?</p>
+     <h1>Welcome <%= data[2].Name %> Bhai</h1>
+     <p><%= data[2].Job %> karte ho kya?</p>
+
+     <section>
+        <h1>This page is made by <%= user.name %> using Express Js</h1>
+        <h2>His age is <%= user.age %></h2>
+        <h2>His email is <%= user.email %></h2>
+
+        <ul>
+            <p>His skills are:</p>
+            <% user.skills.forEach((s) => { %>
+                <li><%= s %></li>
+            <% }) %>
+        </ul>
+        
+     </section>
+</body>
+</html>

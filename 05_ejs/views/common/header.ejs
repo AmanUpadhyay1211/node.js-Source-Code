@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header using Flexbox</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        ul {
+            display: flex;
+            /* background-color: aqua; */
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        ul>li {
+            font-size: 20px;
+            list-style-type: none;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+        }
+
+        ul>li>img {
+            position: relative;
+            right: 490px;
+            top: 3px;
+            /* align-self: flex-start; 
+            /* --> this statement is not working because img is not dirext child of flexbox ul and flex individua item properties only apply on direct child of flexbox */
+        }
+
+        ul>span {
+            font-size: 30px;
+            font-weight: bolder;
+            position: relative;
+            right: 170px;
+        }
+
+        ul>span:nth-child(2) {
+            font-size: 10px;
+            font-weight: lighter;
+            position: relative;
+            right: 294px;
+            top: 20px;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <span>UltraEdit</span>
+                <span>An Idera, Inc. Compamy</span>
+                <li><img src="logo.png" height="70px" alt=""></li>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Resources</a></li>
+                <li><a href="/">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
